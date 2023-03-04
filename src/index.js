@@ -1,8 +1,29 @@
 const fp = require("fastify-plugin");
-const { routes } = require("./routers");
 
 const plugin = function (app, options, done) {
-  app.register(routes);
+  app.get(
+    "/",
+    {
+      schema: {
+        querystring: {
+          type: "object",
+          properties: {
+            type: {
+              // error here!!!
+              anyOf: [],
+            },
+          },
+        },
+      },
+    },
+    async (req) => {
+      return "GET /";
+    }
+  );
+
+  app.post("/", async (req) => {
+    return "POST /";
+  });
 
   // If you comment app.ready, fastify-cli will emit error too
   app.ready(() => {
