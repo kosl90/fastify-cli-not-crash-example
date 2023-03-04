@@ -1,0 +1,20 @@
+{
+  "name": "fastify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev-cli": "fastify start -o -p 3000 ./src/index.js",
+    "dev": "node ./server.js"
+  },
+  "keywords": [],
+  "author": "me",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "close-with-grace": "^1.1.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.13.0",
+    "fastify-cli": "5.7.1",
+    "fastify-plugin": "^4.5.0"
+  }
+}
