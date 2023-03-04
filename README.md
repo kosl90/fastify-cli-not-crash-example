@@ -1,6 +1,6 @@
 # Reproduce fastify-cli not crash
 
-reproduce example code for issue [preParsing is undefined not null](https://github.com/fastify/fastify/issues/4511);
+reproduce example for issue [preParsing is undefined not null](https://github.com/fastify/fastify/issues/4511);
 
 ## Test
 
