@@ -4,7 +4,7 @@ reproduce example for issue [preParsing is undefined not null](https://github.co
 
 ## Test
 
-There are two command in package.json `dev` and `dev-cli`,
+There are two commands in package.json `dev` and `dev-cli`,
 
 `dev` use manually written code to start the service -- will crash.
 
